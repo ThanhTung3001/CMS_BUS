@@ -25,11 +25,11 @@ namespace MyApp.Infrastructure.DependencyResolver
 
         public static void MigrateDatabase(IServiceProvider serviceProvider)
         {
-            var dbContextOptions = serviceProvider.GetRequiredService<DbContextOptions<MyAppDbContext>>();
-            using (var dbContext = new MyAppDbContext(dbContextOptions))
-            {
-                dbContext.Database.Migrate();
-            }
+            // var dbContextOptions = serviceProvider.GetRequiredService<DbContextOptions<MyAppDbContext>>();
+            // using (var dbContext = new MyAppDbContext(dbContextOptions))
+            // {
+            //     dbContext.Database.Migrate();
+            // }
         }
     }
 }
